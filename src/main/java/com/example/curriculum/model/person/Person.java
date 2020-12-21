@@ -2,11 +2,13 @@ package com.example.curriculum.model.person;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import java.util.ArrayList;
 
+@Document(collection = "personal")
 @Data
 public class Person {
     @Id
